@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test123(failed)">
+    <parameter name="Browser123" value="Chrome"/>
+    <classes>
+      <class name="TestNgPack.TestNGClass">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afteMethod"/>
+          <include name="afterClass"/>
+          <include name="verifyTheTermsFunctionality"/>
+          <include name="verifyTheCookiesPrivarcyFunctionality"/>
+        </methods>
+      </class> <!-- TestNgPack.TestNGClass -->
+      <class name="TestNgPack.TestFile1">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="lounchBrowser"/>
+          <include name="afterTest"/>
+          <include name="CreatePOMObject"/>
+          <include name="afterClass"/>
+          <include name="VarifyTheCreateNewAccountFunctionality"/>
+          <include name="VarifyTheCreateNewAccountButton"/>
+        </methods>
+      </class> <!-- TestNgPack.TestFile1 -->
+    </classes>
+  </test> <!-- Test123(failed) -->
+</suite> <!-- Failed suite [Suite] -->
